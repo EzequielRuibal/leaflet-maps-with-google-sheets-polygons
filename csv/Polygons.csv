@@ -1,0 +1,18 @@
+Setting,Customize,Hints,Examples
+Polygon Map Controls,,"For help, see tutorial in DataVizForAll.org      ------>",http://www.datavizforall.org/leaflet/with-google-sheets
+Polygon Legend Title,Sample polygons,Show title at top of Polygon legend (or leave blank),
+Polygon Legend Position,topleft,Display Polygon legend,
+Polygon GeoJSON Name,US state demographics,Show a title for the Polygon GeoJSON file,
+Polygon GeoJSON URL,geometry/us-states-data.geojson,"Polygon file pathname in your GitHub repo, or external web address (or blank if no polygon data)",
+Display Images When Available,off,"When a polygon is clicked, display ""img"" property in geoJSON, if available.",
+Display Polygon Labels at Zoom Level,,Show a polygon property label at zoom levels listed below (or leave blank for none),
+Maximum Zoom for Polygon Label,9,Polygon property label will appear at this zoom level and above,
+Polygon Data,,"For help, see tutorial in DataVizForAll.org      ------>",http://www.datavizforall.org/leaflet/with-google-sheets
+"Polygon Properties, Labels","pop-density-2015, Density per square mile; income-per-capita-2015, Income per capita 2015 ","List each polygon Property to appear in the colored map, followed by a comma, and then its Label to appear in the legend. (Example: pop2010, Population). To show multiple sets, separate each group with a semicolon, but none at the end. ",
+Property Ranges,"0, 100, 200, 500; 0, 25000, 30000, 35000","For each Property-Label set listed above, insert dividers to designate specific colors in the legend, separated by commas. You can use numbers (example: 0, 50, 100), which will appear in your legend with dashes (0-50, 50-100, 100+). Or you can use text (example: low, medium, high) if these values appear in your GeoJSON. List ranges to group data for each property in the order listed above. Use either numbers (which will appear with dashes) or text labels (such as low, medium, high). To show mutiple sets, separate each range with a semicolon, but none at end. The number of ranges must equal the number of Property-Label sets listed in the cell above.",
+"Property Popups, Labels","name, State; pop-density-2015, Density per square mile; income-per-capita-2015, Income per capita 2015",List each Property-Label set to display as pop-up text when the polygon is clicked.,
+Color Settings,,"For help, see tutorial in DataVizForAll.org      ------>",http://www.datavizforall.org/leaflet/with-google-sheets
+Property Range Color Palette,cb-Greens,Select a ColorBrewer palette to automatically color each Range listed above (and/or select colors manually below).,http://colorbrewer.org
+Property Range Manual Colors,,"Leave blank to use the automatic Color Palette above, OR manually insert a color, followed by a comma, for each divider in each Range above. Use either color words (example: lightgray, lightblue, blue) or hex codes (example: #efedf5, #bcbddc, #756bb1). For multiple ranges, separate with a semicolon, but none at the end. The number of colors must match the number of dividers in each range. To use both the automatic ColorBrewer Palette and manual colors, insert blanks (goes to automatic palette above), separated by semicolons. ",
+Polygon Color Opacity,,"Insert number between 0 (transparent) and 1 (opaque), or leave blank for default (0.7).",
+Polygon Outline Color,,"Insert a color word (example: black) or hex code, or leavel blank for default (white).",
